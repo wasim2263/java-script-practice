@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script type="text/javascript">
+function validator(){
+
+alert("dfadfs");
+if(document.nameForm.check.checked){
+alert("it's checked");
+
+}
+else alert('not checked')
+document.getelemetbyid('dfsdf').innerHTML='aaa';
+}
+</script>
 </head>
 <body>
 <form name='nameForm'>
-username: <input type='text' name="username"/>
-password: <input type='password'name="password"/>
-<input type="submit" value= "click" />
+
+<input type="checkbox" name='check'/>
+<input type="submit" value= "click" onclick="validator()" />
+
 </form>
+<p id="dfsdf">dfsdfds</p>
 
-<script type="text/javascript">
-var x=document.nameForm.username.name;
-
-document.write(x);
-</script>
 </body>
 </html>
